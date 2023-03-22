@@ -1,0 +1,8 @@
+//
+// Created by dmonnie5 on 22/03/23.
+//
+
+#ifndef PROJET_BUDGET_MAINWINDOW_H
+#define PROJET_BUDGET_MAINWINDOW_H
+
+#endif //PROJET_BUDGET_MAINWINDOW_H
