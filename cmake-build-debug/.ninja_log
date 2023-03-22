@@ -1,0 +1,8 @@
+# ninja log v5
+1	33	1679065856352018544	Projet_Budget_autogen/timestamp	d9774654ed3dec38
+1	33	1679065856352018544	Projet_Budget_autogen/mocs_compilation.cpp	d9774654ed3dec38
+1	33	1679065856352018544	/home/dmonnie5/Documents/S4/c++_qt/Projet_Budget/cmake-build-debug/Projet_Budget_autogen/timestamp	d9774654ed3dec38
+1	33	1679065856352018544	/home/dmonnie5/Documents/S4/c++_qt/Projet_Budget/cmake-build-debug/Projet_Budget_autogen/mocs_compilation.cpp	d9774654ed3dec38
+34	50	1679065856376019422	CMakeFiles/Projet_Budget.dir/Projet_Budget_autogen/mocs_compilation.cpp.o	d405766d441ab454
+33	1295	1679065857616064753	CMakeFiles/Projet_Budget.dir/main.cpp.o	9adc3aaf9759fb7
+1295	1580	1679065857904075282	Projet_Budget	84543543a0f10a3
