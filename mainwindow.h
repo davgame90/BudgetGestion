@@ -16,6 +16,7 @@
 #include <QTableWidgetItem>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
+#include <QInputDialog>
 
 class MainWindow : public QMainWindow
 {
@@ -44,6 +45,7 @@ private:
 
     void setupExpensesTab();
     void setupStatisticsTab();
+    void onAddExpenseClicked();
 };
 
 

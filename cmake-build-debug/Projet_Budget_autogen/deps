@@ -319,6 +319,7 @@ Projet_Budget_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QInputDialog \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
@@ -336,8 +337,10 @@ Projet_Budget_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qinputdialog.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
