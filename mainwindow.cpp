@@ -68,7 +68,7 @@ void MainWindow::setupExpensesTab()
         if (cboCategory->currentText() == "Nouveau...") {
             bool ok;
             QString newCategory = QInputDialog::getText(this, tr("Ajouter une catégorie"),
-                                                        tr("Nom de la nouvelle catégorie :"), QLineEdit::Normal,
+                                                        tr("Nom de la nouvelle catégorie à ajouter:"), QLineEdit::Normal,
                                                         "", &ok);
             if (ok && !newCategory.isEmpty()) {
                 cboCategory->addItem(newCategory);

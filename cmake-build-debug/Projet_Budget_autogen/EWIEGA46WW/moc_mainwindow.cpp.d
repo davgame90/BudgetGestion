@@ -1,5 +1,5 @@
-/home/dmonnie5/Documents/S4/c++_qt/Projet_Budget/cmake-build-debug/Projet_Budget_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/dmonnie5/Documents/S4/c++_qt/Projet_Budget/mainwindow.h \
-  /home/dmonnie5/Documents/S4/c++_qt/Projet_Budget/cmake-build-debug/Projet_Budget_autogen/moc_predefs.h \
+/home/dmonnie5/Documents/S4/c++_qt/Projet_Budget_Good/BudgetGestion/cmake-build-debug/Projet_Budget_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/dmonnie5/Documents/S4/c++_qt/Projet_Budget_Good/BudgetGestion/mainwindow.h \
+  /home/dmonnie5/Documents/S4/c++_qt/Projet_Budget_Good/BudgetGestion/cmake-build-debug/Projet_Budget_autogen/moc_predefs.h \
   /usr/include/assert.h \
   /usr/include/c++/10/algorithm \
   /usr/include/c++/10/array \

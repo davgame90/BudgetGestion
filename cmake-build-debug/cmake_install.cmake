@@ -1,4 +1,4 @@
-# Install script for directory: /home/dmonnie5/Documents/S4/c++_qt/Projet_Budget
+# Install script for directory: /home/dmonnie5/Documents/S4/c++_qt/Projet_Budget_Good/BudgetGestion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dmonnie5/Documents/S4/c++_qt/Projet_Budget/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dmonnie5/Documents/S4/c++_qt/Projet_Budget_Good/BudgetGestion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
