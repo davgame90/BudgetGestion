@@ -87,8 +87,60 @@ void MainWindow::setupStatisticsTab()
     vbxStatistics = new QVBoxLayout();
     QLabel *lblStatistics = new QLabel("Statistiques");
     vbxStatistics->addWidget(lblStatistics);
+
+    // Add a table to display the statistics
+    QTableWidget *tblStatistics = new QTableWidget();
+    tblStatistics->setColumnCount(2);
+    QStringList headers;
+    headers << "Categorie" << "Total";
+    tblStatistics->setHorizontalHeaderLabels(headers);
+    vbxStatistics->addWidget(tblStatistics);
+
+    // Calculate the total expenses for each category and add them to the table
+    QMap<QString, int> totals;
+    for (int i = 0; i < tblExpenses->rowCount(); i++) {
+        QString category = tblExpenses->item(i, 3)->text();
+        int price = tblExpenses->item(i, 1)->text().toInt();
+        totals[category] += price;
+    }
+    int row = 0;
+    for (auto it = totals.begin(); it != totals.end(); ++it) {
+        if (it.value() > 0) {
+            tblStatistics->insertRow(row);
+            tblStatistics->setItem(row, 0, new QTableWidgetItem(it.key()));
+            tblStatistics->setItem(row, 1, new QTableWidgetItem(QString::number(it.value())));
+            row++;
+        }
+    }
+
     tabStatistics->setLayout(vbxStatistics);
 }
+void MainWindow::updateStatisticsTab() {
+    QMap<QString, int> totals;
+
+    // Iterate over each expense and update the totals map
+    for (int i = 0; i < tblExpenses->rowCount(); i++) {
+        QString category = tblExpenses->item(i, 3)->text();
+        int price = tblExpenses->item(i, 1)->text().toInt();
+        totals[category] += price;
+    }
+
+    // Clear the statistics table
+    QTableWidget *tblStatistics = qobject_cast<QTableWidget*>(tabStatistics->layout()->itemAt(1)->widget());
+    tblStatistics->setRowCount(0);
+
+    // Add each category total to the statistics table
+    int row = 0;
+    for (auto it = totals.begin(); it != totals.end(); ++it) {
+        if (it.value() > 0) {
+            tblStatistics->insertRow(row);
+            tblStatistics->setItem(row, 0, new QTableWidgetItem(it.key()));
+            tblStatistics->setItem(row, 1, new QTableWidgetItem(QString::number(it.value())));
+            row++;
+        }
+    }
+}
+
 void MainWindow::onAddExpenseClicked()
 {
     // Get the input values
@@ -104,4 +156,6 @@ void MainWindow::onAddExpenseClicked()
     tblExpenses->setItem(row, 1, new QTableWidgetItem(QString::number(price)));
     tblExpenses->setItem(row, 2, new QTableWidgetItem(date.toString("dd/MM/yyyy")));
     tblExpenses->setItem(row, 3, new QTableWidgetItem(category));
+
+    updateStatisticsTab();
 }

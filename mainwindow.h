@@ -46,6 +46,7 @@ private:
     void setupExpensesTab();
     void setupStatisticsTab();
     void onAddExpenseClicked();
+    void updateStatisticsTab();
 };
 
 
