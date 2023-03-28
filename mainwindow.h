@@ -38,16 +38,18 @@ private:
     QSpinBox *spnPrice;
     QComboBox *cboCategory;
     QTableWidget *tblExpenses;
+    QTableWidget *tblStatistics;
     QPushButton *btnAddExpense;
     QHBoxLayout *hbxExpenses;
     QVBoxLayout *vbxExpenses;
     QVBoxLayout *vbxStatistics;
 
+
     void setupExpensesTab();
     void setupStatisticsTab();
     void onAddExpenseClicked();
     void updateStatisticsTab();
+    void updatePieChart();
 };
-
 
 #endif //PROJET_BUDGET_MAINWINDOW_H

@@ -11,6 +11,7 @@ find_package(Qt5 COMPONENTS
         Core
         Gui
         Widgets
+        Charts
         REQUIRED)
 
 add_executable(Projet_Budget main.cpp mainwindow.h mainwindow.cpp)
@@ -18,5 +19,6 @@ target_link_libraries(Projet_Budget
         Qt5::Core
         Qt5::Gui
         Qt5::Widgets
+        Qt5::Charts
         )
 
