@@ -27,6 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(tabWidget, &QTabWidget::currentChanged, [this](int index) {
         if (index == 1) {
             updatePieChart();
+            updateStatisticsTab();
         }
     });
 }
