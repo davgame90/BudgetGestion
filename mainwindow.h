@@ -19,6 +19,24 @@
 #include <QVBoxLayout>
 #include <QInputDialog>
 #include <QChartView>
+#include <QStringListModel>
+#include <QRadioButton>
+#include <QButtonGroup>
+#include <QCheckBox>
+
+class PriceTableWidgetItem : public QTableWidgetItem
+{
+public:
+    PriceTableWidgetItem(double price);
+    bool operator <(const QTableWidgetItem &other) const;
+};
+
+class DateTableWidgetItem : public QTableWidgetItem
+{
+public:
+    DateTableWidgetItem(const QDate &date);
+    bool operator <(const QTableWidgetItem &other) const;
+};
 
 class MainWindow : public QMainWindow
 {
@@ -37,7 +55,7 @@ private:
     QLabel *lblDate;
     QLabel *lblCategory;
     QLineEdit *txtName;
-    QSpinBox *spnPrice;
+    QDoubleSpinBox *spnPrice;
     QComboBox *cboCategory;
     QDateEdit *dateEdit;
     QDateEdit *dateEditStart;
@@ -50,15 +68,19 @@ private:
     QVBoxLayout *vbxExpenses;
     QVBoxLayout *vbxStatistics;
     QtCharts::QChartView *chartView;
-
-
+    QComboBox *cboSortBy;
+    QPushButton *btnSort;
+    QCheckBox *chkReverseOrder;
+    QPushButton *btnExport;
 
     void setupExpensesTab();
     void setupStatisticsTab();
     void onAddExpenseClicked();
     void updateStatisticsTab();
     void updatePieChart();
-    QString showCategoryInputDialog();
+    void sortExpenses();
+    void onDeleteExpenseClicked();
+    void onExportClicked();
 };
 
 #endif //PROJET_BUDGET_MAINWINDOW_H
