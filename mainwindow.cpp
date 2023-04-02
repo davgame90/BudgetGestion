@@ -318,6 +318,10 @@ void MainWindow::onDeleteExpenseClicked()
 
     updateStatisticsTab();
     updatePieChart();
+    
+    // Clear the input fields
+    txtName->clear();
+    spnPrice->setValue(0);
 }
 
 void MainWindow::onExportClicked() {
